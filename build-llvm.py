@@ -142,7 +142,7 @@ def parse_parameters(root_folder):
 
                         """),
                         type=str,
-                        default="ClangBuiltLinux")
+                        default="🪓GengKapak")
     parser.add_argument("-D",
                         "--defines",
                         help=textwrap.dedent("""\
@@ -572,7 +572,7 @@ def fetch_llvm_binutils(root_folder, update, shallow, ref):
                 extra_args += ("--no-single-branch", )
         subprocess.run([
             "git", "clone", *extra_args,
-            "https://github.com/llvm/llvm-project",
+            "https://git.rip/ga/llvm-project",
             p.as_posix()
         ],
                        check=True)
